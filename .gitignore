@@ -1,6 +1,6 @@
 *
 !*/
-!*.cpp
+!*.c
 !*.sh
 !README.md
 !.gitignore
