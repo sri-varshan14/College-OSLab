@@ -40,7 +40,7 @@ void show(){
         for(j=0; j<r; j++){
             printf("%d ", alloc[i][j]);
         }
-        printf("\t");
+        printf("\t\t");
         for(j=0; j<r; j++){
             printf("%d ", max[i][j]);
         }

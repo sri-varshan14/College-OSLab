@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
+
 struct{
     char dname[10];
     char fname[25][10];

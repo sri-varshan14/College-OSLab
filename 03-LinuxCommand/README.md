@@ -2,9 +2,7 @@
 
 ## a) ls :
 
-    $ gcc ls.c -o ls
-
-    $ ./ls
+    $ gcc ls.c -o ls && ./ls
 
 ###  Sample Output:
 
@@ -13,9 +11,7 @@
 
 ## b) Grep:
 
-    $ gcc 2_greo.c -o grep
-
-    $ ./grep include 2_grep.c
+    $ gcc 2_greo.c -o grep && ./grep include 2_grep.c
 
 ### Sample Output:
 
@@ -26,9 +22,7 @@
 
 ## c) cp:
 
-    $ gcc 3_cp.c -o cp
-
-    $ ./cp 3_cp.c copy_cp.c
+    $ gcc 3_cp.c -o cp && ./cp 3_cp.c copy_cp.c
 
 ### Sample Output:
 
@@ -41,9 +35,7 @@ It's okay , It's get warning not a compilation error the program work just fine.
 
 ## d) rm:
 
-    $ gcc 4_rm.c -o rm
-
-    $ ./rm copy_cp.c
+    $ gcc 4_rm.c -o rm && ./rm copy_cp.c
 
 ### Sample Output:
     ** NO OUTPUT

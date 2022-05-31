@@ -2,45 +2,37 @@
 
 ## a) Fork System Call:
 
-    $ gcc 1_forkSystemCall.c -o fork
+    $ gcc 1_forkSystemCall.c -o fork && ./fork
 
-    $ ./fork 
+### Sample Output:
 
-###  Sample Output:
-
-    Parent process : 
+    Parent process :
     Process id is 7675
     Value of x is 6
     Process id of parent is 6441
 
-    Child Process : 
+    Child Process :
     Process id is 7676
     Value of x is 6
     Process id of parent is 904
 
-
 ## b) Wait System Call:
 
-    $ gcc 2_waitSystemCall.c -o wait
-
-    $ ./wait
+    $ gcc 2_waitSystemCall.c -o wait && ./wait
 
 ### Sample Output:
 
     Child starts
-    Odd Nos: 1 3 5 7 9 
+    Odd Nos: 1 3 5 7 9
     Child ends
 
     Parent starts
-    Even Nos: 2 4 6 8 10 
+    Even Nos: 2 4 6 8 10
     Parent ends
-
 
 ## c) Exec System Call:
 
-    $ gcc 3_execSystemCall.c -o exec
-
-    $ ./exec
+    $ gcc 3_execSystemCall.c -o exec && ./exec
 
 ### Sample Output:
 
@@ -51,12 +43,9 @@
 If you get any warning in this program.
 It's okay , It's get warning not a compilation error the program work just fine. ;)
 
-
 ## d) Stat System Call:
 
-    $ gcc 4_statSystemCall.c -o stat
-
-    $ ./stat 4_statSystemCall.c
+    $ gcc 4_statSystemCall.c -o stat && ./stat 4_statSystemCall.c
 
 ### Sample Output:
 
@@ -74,9 +63,7 @@ It's okay , It's get warning not a compilation error the program work just fine.
 
 ## e) Readdir System Call:
 
-    $ gcc 5_readdirSystemCall.c -o readdir
-
-    $ ./readdir ../02-SystemCall
+    $ gcc 5_readdirSystemCall.c -o readdir && ./readdir ../02-SystemCall
 
 ### Sample Output:
 
@@ -92,40 +79,34 @@ It's okay , It's get warning not a compilation error the program work just fine.
     ..
     3_execSystemCall.c
 
-    
-** This output might not be same for us but make sure that this output and `ls` command output is same. ;))
-
+\*\* This output might not be same for us but make sure that this output and `ls` command output is same. ;))
 
 ## f) Open System Call:
 
-    $ gcc 6_openSystemCall.c -o open
-
-    $ ./open test.txt
+    $ gcc 6_openSystemCall.c -o open && ./open test.txt
 
 ### Sample Output:
+
     Press Ctrl+D at end in a new line:
     Hi I am Happy/Sad Programmer ;)
 
 After writing your text press Ctrl + D to exit and save the file make sure that a file name test.txt have that content you gave and ignore warning if happen so .
 
-
 ## g) Read System Call:
 
-    $ gcc 7_readSystemCall.c -o read
-
-    $ read test.txt
+    $ gcc 7_readSystemCall.c -o read && read test.txt
 
 ### Sample Output:
-    Contents of the file test.txt is : 
+
+    Contents of the file test.txt is :
     Hi I am Happy/Sad Programmer ;)
 
 ## h) Write System Call:
-     
-    $ gcc 8_writeSystemCall.c -o write
 
-    $ ./write test.txt
+    $ gcc 8_writeSystemCall.c -o write && ./write test.txt
 
 ### Sample Output:
+
     Press Ctrl+D at end in a new line:
     Hi, This is another Happy/Sad Programmer ;)
 

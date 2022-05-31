@@ -22,4 +22,4 @@ main(){
         printf("\n %d [%d]", i, pagetable[i]);
     frameno = pagetable[pgno];
     printf("\nPhysical address: %d%d", frameno, ofs);
-} 
+}

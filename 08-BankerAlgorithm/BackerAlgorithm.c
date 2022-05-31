@@ -3,26 +3,26 @@ main(){
     int r[1][10], av[1][10];
     int all[10][10], max[10][10], ne[10][10], w[10],safe[10];
     int i=0, j=0, k=0, l=0, np=0, nr=0, count=0, cnt=0;
-    printf("enter the number of processes in a system");
-    scanf("%d", &np);
-    printf("enter the number of resources in a system");
-    scanf("%d",&nr);
+    printf("Enter the number of processes in a system : ");
+    scanf(" %d", &np);
+    printf("Enter the number of resources in a system : ");
+    scanf(" %d",&nr);
     for(i=1; i<=nr; i++){
-        printf("Enter no. of instances of resource R%d " ,i);
-        scanf("%d", &r[0][i]);
+        printf("Enter no. of instances of resource R%d :" ,i);
+        scanf(" %d", &r[0][i]);
         av[0][i] = r[0][i];
     }
     for(i=1; i<=np; i++)
         for(j=1; j<=nr; j++)
             all[i][j] = ne[i][j] = max[i][j] = w[i]=0; 
-        printf("Enter the allocation matrix");
+        printf("Enter the allocation matrix :\n");
     for(i=1; i<=np; i++){
         for(j=1; j<=nr; j++){
             scanf("%d", &all[i][j]);
             av[0][j] = av[0][j] - all[i][j];
         }
     }
-    printf("Enter the maximum matrix");
+    printf("Enter the maximum matrix :\n");
     for(i=1; i<=np; i++){
         for(j=1; j<=nr; j++){
             scanf("%d",&max[i][j]);
