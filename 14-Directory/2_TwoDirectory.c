@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
 struct{
     char dname[10], fname[10][10];
     int fcnt;
